@@ -1,0 +1,4 @@
+<div class="wind-direction">
+  <span class="arrow"></span>
+  <span class="label">N</span>
+</div>
