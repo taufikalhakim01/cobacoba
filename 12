@@ -1,0 +1,62 @@
+.wind-direction {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #f0f0f0;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  width: 10px;
+  height: 10px;
+  background: #333;
+  border-radius: 50% 50% 0 50%;
+}
+
+.label {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wind-direction[data-direction="N"] .arrow {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.wind-direction[data-direction="NE"] .arrow {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.wind-direction[data-direction="E"] .arrow {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.wind-direction[data-direction="SE"] .arrow {
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.wind-direction[data-direction="S"] .arrow {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.wind-direction[data-direction="SW"] .arrow {
+  transform: translate(-50%, -50%) rotate(225deg);
+}
+
+.wind-direction[data-direction="W"] .arrow {
+  transform: translate(-50%, -50%) rotate(270deg);
+}
+
+.wind-direction[data-direction="NW"] .arrow {
+  transform: translate(-50%, -50%) rotate(315deg);
+}
